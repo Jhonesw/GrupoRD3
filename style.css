@@ -122,9 +122,23 @@ h4{
 
 #tecxth2{
     width: 100%;
+    height: 100px;
     background-image: linear-gradient(blue,black);
     text-align: center;
 }
+#tecxth4{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(blue,black);
+    text-align: center;
+}
+#tecxth5{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(black,blue);
+    text-align: center;
+}
+
 #tecxth3{
 display: flex;
 margin: auto;
