@@ -1,0 +1,158 @@
+/* -------------------------------------- */
+/* ESTILOS GLOBAIS E FUNDO */
+/* -------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; 
+    overflow-x: hidden; /* Previne rolagem horizontal em mobile */
+}
+.logo1{
+    width: 300px;
+}
+/* Ajustes para a Imagem de Fundo (Cover Background) */
+body {
+    background-image: url(../Album/media/bkg.png);
+    background-repeat: no-repeat; /* A imagem não se repete */
+    background-size: cover; /* A imagem cobre toda a área do body */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    position: relative;
+    /* Adicionando um overlay suave ao fundo, para o texto ser mais legível */
+}
+
+/* Overlay para melhorar a legibilidade sobre a imagem de fundo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Sobreposição escura (70%) */
+    z-index: -1;
+}
+
+/* -------------------------------------- */
+/* LAYOUT DOS PLAYERS (SECTION) */
+/* -------------------------------------- */
+
+/* Container Flexível para múltiplos players */
+section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    max-width: 1300px; /* Limite uma largura máxima razoável */
+    margin: 40px auto; /* Centraliza a seção e dá espaço em cima/baixo */
+    padding: 0 10px; /* Padding interno para evitar que os players colem nas bordas */
+}
+
+/* Container principal do player */
+.music-player {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+    width: 350px; /* Largura base */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.8);
+}
+
+/* Área da Capa do Álbum */
+.album-cover {
+    margin-bottom: 20px;
+}
+
+.album-cover img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Informações da Música */
+.song-info h2 {
+    margin: 5px 0 2px 0;
+    font-size: 1.5em;
+    color: #1db954; 
+    word-break: break-word; /* Garante que o texto longo não exceda a caixa */
+}
+
+.song-info p {
+    margin-top: 0;
+    font-size: 1em;
+    opacity: 0.;
+}
+
+/* Controles de Áudio */
+.audio-controls {
+    margin-top: 0px;
+}
+
+.audio-controls audio {
+    width: 100%;
+    /* Estilização para o player nativo para combinar com o tema escuro */
+    filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    transition: filter 0.3s ease;
+}
+#divcabeca{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* -------------------------------------- */
+/* RESPONSIVIDADE (Aprimoramentos) */
+/* -------------------------------------- */
+
+/* Mobile First: Garante que os players sejam flexíveis em telas menores */
+@media (max-width: 768px) {
+    
+    /* Aprimoramento da Flexibilidade */
+    .music-player {
+        /* Permite que o player ocupe quase toda a largura para telas menores que 768px */
+        width: 100%; 
+        max-width: 400px; /* Limita o tamanho em tablets */
+        margin: 0 auto;
+    }
+
+    /* Reduz o padding geral da página em mobile */
+    body {
+        padding: 10px;
+    }
+
+    /* Reduz o espaçamento entre os players para economizar espaço */
+    section {
+        gap: 20px;
+        margin: 20px auto;
+    }
+}
+
+/* Ajustes finos para Mobile (Abaixo de 480px) */
+@media (max-width: 480px) {
+    .logo1{
+        width: 15.2em;
+    }
+    .music-player {
+        padding: 20px; /* Reduz o padding interno */
+    }
+    
+    .song-info h2 {
+        font-size: 1.2em; /* Títulos menores */
+    }
+    
+    .song-info p {
+        font-size: 0.9em; /* Artistas menores */
+    }
+}
