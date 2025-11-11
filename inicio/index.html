@@ -3,108 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPO RD3 - Site Oficial</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Estilos personalizados -->
+    <title>Seu Projeto com Vídeo Background</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="text-white">
-
-    <!-- Fundo de Vídeo -->
     <div class="video-background">
-        <video autoplay muted loop playsinline id="meuVideo" class="opacity-70">
-            <source src="../media/background.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline id="meuVideo">
+            <source src="./media/background.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
 
-    <!-- Sobreposição escura -->
-    <div class="fixed inset-0 bg-black opacity-70 z-0"></div>
-
-    <!-- Cabeçalho -->
-    <header class="overlay-content bg-black/40 backdrop-blur-sm shadow-xl fixed w-full top-0 z-50">
-        <nav class="navbar max-w-7xl mx-auto flex justify-between items-center p-4">
+    <header class="overlay-content">
+        <nav class="navbar">
             <div class="logo-container">
-                <img src="../media/LOGO.png" 
-                     alt="Logo Grupo RD3" 
-                     class="h-10 w-auto logo">
+                <img src="/media/LOGO.png" alt="Logo da Sua Empresa/Banda" class="logo">
             </div>
-
-            <!-- Menu -->
-            <ul class="menu flex space-x-6 text-lg">
-                <li><a href="../index.html" class="hover:text-green-400 font-medium transition duration-300">Release</a></li>
+                 <ul class="menu flex space-x-6 text-lg">
+                <li><a href="../index.html" class="hover:text-green-400 font-medium transition duration-300">Inicio</a></li>
                 <li><a href="../Album/index.html" class="hover:text-green-400 font-medium transition duration-300">Album</a></li>
                 <li><a href="../GALERIA/index.html" class="hover:text-green-400 font-medium transition duration-300">Galeria</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main class="overlay-content main-content">
-        <div class="max-w-7xl mx-auto p-4 sm:p-6 w-full">
-            <section class="hero-section flex flex-col md:flex-row items-center justify-between gap-10">
+        <section class="hero-section">
+            <div class="text-content">
+                <p>"JHONYES"</p>
+                <h1 class="title">COMO O GRUPO COMEÇOU ?</h1> 
+                <p>Rd3: Uma Trajetória de R&B e Hip-Hop no Palco de Osasco <BR></BR>
+O Grupo Rd3 (anteriormente conhecido como Totalys Black) emergiu no cenário musical 
+por volta dos anos 2000, inicialmente formado por Jhones, Dhemerson, Wagner e Fabio. 
+Influenciados por grupos como B2K, o grupo estabeleceu sua sonoridade no cruzamento 
+do R&B com o Hip-Hop. <BR>
 
-                <!-- Texto -->
-                <div class="text-content w-full md:w-1/2 text-center md:text-left">
-                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white mb-4 tracking-tighter leading-tight">
-                     GRUPO <span class="text-[#FFD700] drop-shadow-[0_0_2px_#FFD700] font-extrabold">RD3</span>
-                    </h1>
-                    <p class="text-xl sm:text-2xl text-white/90 font-light mb-8">
-                        Os Sentimentos do Romance, o Dia a Dia do Relacionamento
-                    </p>
-                    <p class="text-white/80 mb-4 text-lg">SEJA BEM-VINDOS AO SITE DO GRUPO RD3.</p>
+🌟 A Formação Original e Primeiros Passos
+A essência musical do Rd3 era criada em torno de composições autorais e 
+bases no Pitbox. A dinâmica vocal inicial contava com: <BR> <BR>
 
-                    <p class="text-base sm:text-lg mb-8 text-white/90 font-light">
-                        Saiba mais sobre o grupo no menu em <strong class="text-green-400">RELEASE</strong>.<br>
-                        Em <strong class="text-green-400">ALBUM</strong> você ouve as músicas do grupo.<br>
-                        Em <strong class="text-[#FFD700] -400">GALERIA</strong> veja fotos e vídeos de shows e eventos.
-                    </p>
+Dhemerson: Voz principal nos refrões. <BR>
+Jhones: Agitação nos refrões e vocais nas levadas rap. <BR>
+Wagner e Fabio: Apoio nas levadas rap. <BR> <BR>
 
-                    <!-- Redes sociais -->
-                    <p class="social-text text-xl font-semibold mb-3">Nos siga nas redes sociais</p>
-                    <div id="redes" class="flex space-x-6 justify-center md:justify-start">
-                        <a href="https://instagram.com/seuusuario" target="_blank" aria-label="Instagram">
-                            <svg class="w-8 h-8 text-white hover:text-pink-600 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6 10c0 .7-.1 1.4-.3 2.1-.2.7-.6 1.3-1 1.8-.4.5-1 .9-1.6 1.1-.6.3-1.3.4-2 .4-.7 0-1.4-.1-2.1-.3-.7-.2-1.3-.6-1.8-1-.5-.4-.9-1-1.1-1.6-.3-.6-.4-1.3-.4-2s.1-1.4.3-2.1c.2-.7.6-1.3 1-1.8.4-.5 1-.9 1.6-1.1.6-.3 1.3-.4 2-.4.7 0 1.4.1 2.1.3.7.2 1.3.6 1.8 1 .5.4.9 1 1.1 1.6.3.6.4 1.3.4 2zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-                        </a>
-                        <a href="https://facebook.com/seuusuario" target="_blank" aria-label="Facebook">
-                            <svg class="w-8 h-8 text-white hover:text-blue-600 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>
-                        </a>
-                        <a href="https://youtube.com/seuusuario" target="_blank" aria-label="YouTube">
-                            <svg class="w-8 h-8 text-white hover:text-red-600 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 2.5a3.003 3.003 0 00-2.072-.887C15.035 1.488 12 1.5 12 1.5s-3.035-.012-5.543.113A3.003 3.003 0 004.385 2.5 3.003 3.003 0 002.5 4.385C2.388 6.893 2.385 12 2.385 12s.003 5.107.118 7.615a3.003 3.003 0 001.885 1.885c2.508.118 5.543.115 5.543.115s3.035.003 5.543-.115a3.003 3.003 0 001.885-1.885c.118-2.508.115-7.615.115-7.615s.003-5.107-.115-7.615zm-1.885 1.56a1 1 0 011 1v12.88a1 1 0 01-1 1H4.385a1 1 0 01-1-1V5.06a1 1 0 011-1h15.23zm-7.615 3.5v8l5.5-4z"/></svg>
-                        </a>
-                    </div>
+Sob o nome de Totalys Black, o grupo se destacou não apenas pela música, mas também 
+pelas coreografias, em linha com a referência do B2K. A primeira música gravada, ainda 
+como Grupo Rd3, foi produzida com o DJ Neném, e as gravações subsequentes foram 
+realizadas no estúdio de Tobias, no Rio Pequeno.  <BR>
+
+Composições de Destaque da Primeira Fase:  <BR> <BR>
+
+"VOU DIZER" (Composição: Dhemerson, Jhones, Wagner) <BR>
+"PLESES GIRL" (Composição: Dhemerson, Jhones, Wagner) <BR>
+"ARREPENDIMENTOS" (Composição: Dhemerson, Jhones, Wagner) <BR>
+"UMA NOITE" (Composição: Dhemerson, Jhones, Wagner) <BR> <BR>
+
+🔄 Mudanças de Rota e a Reestruturação
+Com a saída de Wagner e Fabio, o grupo entrou em uma breve pausa, período 
+em que Jhones desenvolveu projetos solo. <BR>
+
+Cerca de um ano depois, Dhemerson e Jhones ressurgiram com o Grupo Rd3, incorporando 
+inicialmente o grupo de dança Robótikos. Após o desmembramento do grupo de dança, o Rd3 
+se estabilizou com Jhones, Dhemerson, Gordinho e, por um período, Naldo. Com a saída de 
+Naldo por motivos pessoais, o grupo prosseguiu como um trio até a chegada de Edy, que 
+agregou tocando violão e auxiliando na composição. <BR> <BR>
+
+🚀 A Fase BLACKRD3 <BR>
+Com a saída subsequente de Edy e Dhemerson (que se dedicou ao evangelho), a liderança 
+do grupo passou a ser de Jhones e Felipe Gordinho. Nessa fase, a equipe foi 
+reforçada por X-Jay e Binha.
+
+A união com o grupo Anjos de Black, onde X-Jay fazia dupla com seu irmão, deu origem 
+ao nome BLACKRD3. O grupo ganhou nova força com o retorno de Dhon (Dhemerson), estabilizando 
+a formação para produzir novas faixas. <BR>
+
+Repertório e Composições da Fase BLACKRD3: <BR> <BR>
+
+"PROVOCANTE" (Composição: Jhones, Dhemerson, X-Jay, Marcos Duarte) <BR>
+"PERSONALIDADE" (Composição: Jhones, Dhemerson, F.R.D, X-Jay, Marcos Duarte) <BR>
+"MARIA" (Composição: Marcos Duarte, X-Jay, Jhones) <BR>
+"SEU ENCANTO" (Composição: Jhones) <BR>
+"SE FOR POR MIM" (Composição: X-Jay, Marcos Duarte, Jhones) <BR>
+"O NOSSO AMOR" (Composição: Jhones) <BR> <BR>
+
+✨ A Continuidade e Carreira Solo
+Após a dissolução do grupo BLACKRD3, Jhones e Gordinho decidiram manter 
+o nome Rd3 ativo, reescrevendo novas músicas e preservando o legado do grupo. <BR> 
+Últimas Composições do Rd3: <BR> <BR>
+
+"SÓ FOFOCA" (Composição: Jhones) <BR>
+"PROMESSAS" (Composição: Jhones) <BR>
+"QUANDO VOCÊ TEM" (Composição: Jhones)  <BR>
+"O NOSSO AMOR" (Composição: Jhones)  <BR>
+"A TE ESPERAR" (Composição: Marcos Duarte & Jhones) <BR>
+"ESTAR COM VOCÊ" (Composição: Jhones & Dhemerson)  <BR>
+
+Simultaneamente, Jhones seguiu consolidando sua carreira solo com um 
+repertório robusto de composições próprias. <BR>
+
+Músicas da Carreira Solo de Jhones: <BR> <BR>
+
+"TA NO PAPO" (Composição: Jhones)  <BR>
+"FESTA DO BIQUINI" (Composição: Jhones)  <BR>
+"SE LIGA" (Composição: Jhones)  <BR>
+"MELANINA" (Composição: Jhones)  <BR>
+"PAPO RETO" (Composição: Jhones)  <BR>
+
+                </p>
+                
+                <p class="social-text">Nos siga nas redes sociais</p>
+                <div id="redes">
+                    <a href="https://instagram.com/seuusuario" target="_blank">
+                        <img src="../media/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com/seuusuario" target="_blank">
+                        <img src="../media/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://youtube.com/seuusuario" target="_blank">
+                        <img src="../media/youtube.png" alt="YouTube">
+                    </a>
                 </div>
-
-                <!-- Imagem -->
-                <div class="image-content w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                    <img src="../media/JH1&GORD.png"
-                         alt="Imagem principal da seção do Grupo RD3"
-                         class="w-full max-w-sm rounded-lg shadow-2xl shadow-[#FFD700] -400/30">
-                </div>
-            </section>
-        </div>
+            </div>
+            
+            <div class="image-content">
+                <img src="../media/JH1&GORD.png" alt="Imagem principal da seção">
+            </div>
+            
+        </section>
+            
     </main>
 
-    <!-- Rodapé -->
-    <footer class="overlay-content bg-black/40 backdrop-blur-sm p-4 text-center text-sm border-t border-gray-700/50">
-        <div class="social-media mb-2">
-            <h3 class="text-white/80 font-medium mb-1">Conecte-se:</h3>
-            <span class="space-x-4">
-                <a href="https://facebook.com/seuusuario" target="_blank" class="text-white/70 hover:text-[#FFD700] -400 transition duration-300">Facebook</a>
-                <span class="text-white/50">|</span>
-                <a href="https://instagram.com/seuusuario" target="_blank" class="text-white/70 hover:text-[#FFD700] -400 transition duration-300">Instagram</a>
-                <span class="text-white/50">|</span>
-                <a href="mailto:contato@email.com" class="text-white/70 hover:text-[#FFD700] -400 transition duration-300">Contato</a>
-            </span>
+    <footer class="overlay-content">
+        <div class="social-media">
+            <h3>Conecte-se:</h3>
+            <a href="https://facebook.com/seuusuario" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a> |
+            <a href="mailto:contato@email.com">Contato</a>
         </div>
-        <p class="copyright text-white/60">&copy; 2025 Grupo RD3. Todos os direitos reservados.</p>
+        <p class="copyright">&copy; 2025 Grupo RD3. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
