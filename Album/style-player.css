@@ -15,7 +15,7 @@ body {
 }
 /* Ajustes para a Imagem de Fundo (Cover Background) */
 body {
-    background-image: url(../Album/media/bkg.png);
+    background-image: url(../Album/media/bkg.webp);
     background-repeat: no-repeat; /* A imagem não se repete */
     background-size: cover; /* A imagem cobre toda a área do body */
     background-position: center center; /* Centraliza a imagem */
